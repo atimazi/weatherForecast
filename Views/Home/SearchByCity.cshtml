@@ -1,0 +1,28 @@
+﻿@model NEWAPP.Models.SearchByCity
+@{
+	ViewData["title"] = "SearchByCity";
+}
+<div class="container">
+
+	<form method="post">
+		<div class="container">
+			<h2>Search By City Name </h2>
+			<div>
+				<input asp-for="CityName" class="form-control" placeholder="Enter city name:" /> <br /> 
+
+				<button asp-controller="Home" asp-action="SearchByCity" class="btn btn-outline-primary">Search</button>
+				<span asp-validation-for="CityName" class="text-danger"></span> <br /> <br />
+				
+			</div>
+			<div>
+				
+				
+				@*<button asp-controller="Home" asp-action="CityNY" class="btn btn-success" onclick=" window.open('https://localhost:7092/Home/CityNY','_blank')"> My Selected Cities</button>*@
+
+
+
+			</div>
+		</div>
+	</form>
+</div>
+

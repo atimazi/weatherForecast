@@ -1,0 +1,36 @@
+﻿@model NEWAPP.Models.city
+@{
+	ViewData["Title"] = "CityTEH";
+}
+
+
+<label asp-for="Name">Name</label>
+<span class="badge alert-primary">@Model.Name</span>
+<br />
+
+<label asp-for="Temperature">Temperature </label>
+<span class="badge alert-primary">@Model.Temperature</span>
+<br />
+
+<label asp-for="Humidity">Humidity</label>
+<span class="badge alert-primary">@Model.Humidity</span>
+<br />
+
+<label asp-for="Pressure">Pressure</label>
+<span class="badge alert-primary">@Model.Pressure </span>
+<br />
+
+<label asp-for="Wind"> Wind </label>
+<span class="badge alert-primary">@Model.Wind </span>
+<br />
+
+<label asp-for="Weather">Weather</label>
+<span class="badge alert-primary">@Model.Weather</span>
+<br />
+
+
+
+<form method="get">
+	<button onclick: asp-controller="Home" asp-action="" class="btn btn-primary">Go Back</button>
+</form>
+

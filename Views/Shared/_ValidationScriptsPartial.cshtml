@@ -1,0 +1,35 @@
+﻿@model NEWAPP.Models.city
+@{
+	ViewData["Title"] = "CityNY";
+
+}
+
+
+<h1>Five Cities Info</h1>
+<table class="hello">
+	<tr>
+		<th>Name</th>
+		<th>Wind</th>
+		<th>Pressure</th>
+		<th>Humidity</th>
+		<th>Temperature</th>
+		<th>Weather</th>
+	</tr>
+	<tr>
+		<td>@Model.Name</td>
+		<td>@Model.Wind</td>
+		<td>@Model.Pressure</td>
+		<td>@Model.Humidity</td>
+		<td>@Model.Temperature</td>
+		<td>@Model.Weather</td>
+
+	</tr>
+
+
+</table>
+
+
+
+<form method="get">
+	<button onclick: asp-controller="Home" asp-action="" class="btn btn-primary">Go Back</button>
+</form>
